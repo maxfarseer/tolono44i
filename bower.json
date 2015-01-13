@@ -1,0 +1,21 @@
+{
+  "name": "tolono44i_bower",
+  "version": "0.0.0",
+  "homepage": "https://github.com/maxfarseer/tolono44i",
+  "authors": [
+    "Max Patsiansky <maxfarseer@gmail.com>"
+  ],
+  "description": "my boilerplate with bower",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "lodash": "~2.4.1"
+  }
+}
