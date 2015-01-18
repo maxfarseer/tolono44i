@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
   head
     title Tolono44i
+    link(rel="stylesheet", href="/css/main.css")
 
   body
     h1 Raise your Tolon!&nbsp;
@@ -14,8 +15,12 @@ html(lang="en")
       pixi engine zone below
 
     #pixi
+      //- canvas#game-canvas(width="512", height="384")
 
 
   script(src="js/libs.js")
   script(src="js/pixi.dev.js")
+  script(src="js/Far.js")
+  script(src="js/Mid.js")
+  script(src="js/Scroller.js")
   script(src="js/app.js")

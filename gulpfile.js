@@ -36,7 +36,7 @@ gulp.task('sass', function() {
       //config.sourceComments = 'map';
   }
 
-  return gulp.src('src/sass/main.scss')
+  return gulp.src('src/scss/main.scss')
     .pipe(sass(config))
     .pipe(gulp.dest(outputDir + '/css'))
     .pipe(connect.reload());
@@ -57,6 +57,14 @@ gulp.task('img', function() {
       'src/i/**/*.gif'
     ])
     .pipe(gulp.dest(outputDir+'/i/'))
+    .pipe(connect.reload());
+});
+
+gulp.task('json', function() {
+  return gulp.src([
+      'src/json/**/*.json'
+    ])
+    .pipe(gulp.dest(outputDir+'/json/'))
     .pipe(connect.reload());
 });
 
@@ -84,7 +92,7 @@ gulp.task('lint', function() {
 gulp.task('watch', function() {
   gulp.watch('src/jade/**/*.jade', ['jade']);
   gulp.watch('src/js/**/*.js', ['js','lint']);
-  gulp.watch('src/sass/**/*.scss', ['sass']);
+  gulp.watch('src/scss/**/*.scss', ['sass']);
 });
 
 gulp.task('connect', function() {
@@ -95,4 +103,4 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('default', ['jade', 'sass', 'watch', 'js', 'connect', 'img', 'compress:libs']);
+gulp.task('default', ['jade', 'sass', 'watch', 'js', 'connect', 'img', 'compress:libs', 'json']);
