@@ -23,6 +23,6 @@ function Scroller(stage) {
   Scroller.prototype.moveViewportXBy = function(units) {
     var newViewportX = this.viewportX + units;
     this.setViewportX(newViewportX);
-  }
+  };
 
 }
