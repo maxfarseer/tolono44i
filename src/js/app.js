@@ -37,6 +37,16 @@ $(function() {
     this.scroller = new Scroller(this.stage);
     requestAnimFrame(this.update.bind(this));
     document.getElementById('pixi').appendChild(this.renderer.view);
+
+    /*var slice1 = PIXI.Sprite.fromFrame('edge_01');
+    slice1.position.x=32;
+    slice1.position.y=64;
+    this.stage.addChild(slice1);
+
+    var slice2 = PIXI.Sprite.fromFrame("decoration_03");
+    slice2.position.x = 128;
+    slice2.position.y = 64;
+    this.stage.addChild(slice2);*/
   };
 
   var main = new Main();
