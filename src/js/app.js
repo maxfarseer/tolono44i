@@ -36,9 +36,6 @@ $(function() {
     requestAnimFrame(this.update.bind(this));
     document.getElementById('pixi').appendChild(this.renderer.view);
 
-    /*this.pool = new WallSpritesPool();
-    this.wallSlices = [];*/
-
   };
 
   window.main = new Main();
