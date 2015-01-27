@@ -24,6 +24,8 @@
     "$":false,
     "angular":false,
     "_":false,
-    "PIXI":false
+    "PIXI":false,
+    "SliceType":false,
+    "WallSlice":false
   }
 }
